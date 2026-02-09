@@ -1,0 +1,165 @@
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #0f172a;
+  background-color: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.header {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 3.5rem 0 2.5rem;
+}
+
+.header h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin: 0.5rem 0 1rem;
+}
+
+.subtitle {
+  color: #475569;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+.header-card {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 2rem;
+  border-radius: 20px;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.ghost {
+  background: transparent;
+  color: #f8fafc;
+  border: 1px solid rgba(248, 250, 252, 0.3);
+}
+
+.stats {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.stat-card h3 {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.panel {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.panel h2 {
+  margin-bottom: 1.5rem;
+}
+
+.panel-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.panel-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+.panel-item p {
+  color: #475569;
+  line-height: 1.5;
+}
+
+.workflow {
+  list-style: none;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.workflow li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+
+.workflow h3 {
+  margin-bottom: 0.35rem;
+}
+
+.workflow p {
+  color: #475569;
+}
